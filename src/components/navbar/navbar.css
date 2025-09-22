@@ -1,0 +1,25 @@
+#navbar-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    z-index: 5;
+    justify-content: space-between;
+}
+
+#navbar-logo {
+    height: 7vh;
+}
+
+#navbar-container > button {
+    display: flex;
+    flex-shrink: 1;
+    padding: 8px;
+    border-radius: 10px;
+    aspect-ratio: 1;
+}

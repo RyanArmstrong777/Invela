@@ -1,0 +1,34 @@
+#guarantees-container {
+    align-items: center;
+    gap: 0;
+}
+
+.grid {
+    display: grid;
+    gap: var(--spacing-sm);
+    width: 100%;
+    max-width: 1200px;
+    grid-template-columns: 1fr;
+    margin-top: var(--spacing-xxl)
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1150px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,138 @@
+:root {
+    --text: #fff;
+    --detail: #e2a9f1;
+    --card: rgba(226, 169, 241, .1);
+    --darkest: #222;
+
+    --spacing-xs: 0.8rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.25rem;
+    --spacing-lg: 1.75rem;
+    --spacing-xl: 2.25rem;
+    --spacing-xxl: 3rem;
+}
+
+body, html {
+    overflow: hidden;
+    place-items: unset;
+}
+
+html {
+    overflow-y: auto;
+    overscroll-behavior: none;
+}
+
+button {
+    -webkit-tap-highlight-color: transparent;
+    outline: none !important;
+    user-select: none;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cal Sans', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    cursor: default;
+    pointer-events: none;
+    line-height: 120%;
+}
+
+h1 {
+    font-size: var(--spacing-xxl);
+}
+
+h2 {
+    font-size: var(--spacing-xl);
+}
+
+h3 {
+    font-size: var(--spacing-lg);
+}
+
+h4 {
+    font-size: var(--spacing-md);
+}
+
+h5 {
+    font-size: var(--spacing-sm);
+}
+
+h6 {
+    font-size: var(--spacing-xs);
+}
+
+svg.lucide {
+    color: #fff;
+    height: var(--spacing-lg);
+    aspect-ratio: 1;
+}
+
+@media(min-width: 769px) {
+    h1 {
+        font-size: calc(var(--spacing-xxl) * 1.6);
+    }
+
+    h2 {
+        font-size: calc(var(--spacing-xl) * 1.6);
+    }
+
+    h3 {
+        font-size: calc(var(--spacing-lg) * 1.6);
+    }
+
+    h4 {
+        font-size: calc(var(--spacing-md) * 1.6);
+    }
+
+    h5 {
+        font-size: calc(var(--spacing-sm) * 1.6);
+    }
+
+    h6 {
+        font-size: calc(var(--spacing-xs) * 1.6);
+    }
+    .mobile-only {
+        display: none !important;
+    }
+    .desktop-only {
+        display: flex !important;
+    }
+}
+
+@media(max-width: 1100px) {
+    .mobile-only {
+        display: flex !important;
+    }
+    .desktop-only {
+        display: none !important;
+    }
+}
+
+.highlighted-text {
+    color: var(--detail);
+}
+
+.business-logo {
+    display: none;
+    width: 4rem;
+}
+
+.flex-1 {
+    flex: 1;
+    height: fit-content;
+}
+
+.glass {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+}

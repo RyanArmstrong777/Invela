@@ -1,0 +1,44 @@
+#testimonials-container {
+    display: flex;
+    text-align: center;
+    gap: var(--spacing-xxl);
+}
+
+#reviews-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-lg);
+    justify-content: center;
+}
+
+.review-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-lg) ;
+    text-align: left;
+}
+
+.stars-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-top: auto;
+}
+
+.stars-container > div {
+    display: flex;
+    gap: 2px;
+}
+
+.stars-container > div > * {
+    color: yellow;
+    width: var(--spacing-sm);
+}
+
+.stars-container > h6 {
+    opacity: 50%;
+}

@@ -1,0 +1,9 @@
+.section-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: fit-content;
+    padding: 0 var(--spacing-xxl);
+    gap: var(--spacing-md);
+    justify-content: center;
+}

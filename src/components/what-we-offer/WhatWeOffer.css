@@ -1,0 +1,37 @@
+#what-we-offer-container {
+    align-items: center;
+    gap: 0;
+}
+
+#what-we-offer-container > * {
+    text-align: center;
+}
+
+#services-container {
+    display: flex;
+    flex-direction: column;
+    margin: var(--spacing-xxl) 0 var(--spacing-md) 0;
+    gap: var(--spacing-sm);
+    align-items: center;
+    width: 100%;
+}
+
+#services-container > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1500px;
+    min-width: fit-content;
+}
+
+#services-container > div > * {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+@media(max-width: 768px) {
+    #services-container {
+        margin-top: var(--spacing-md);
+    }
+}

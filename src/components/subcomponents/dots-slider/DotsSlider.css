@@ -1,0 +1,37 @@
+#dots-slider-container {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xs)
+}
+
+.dots-slider-option-wrapper {
+    display: grid;
+    background-color: transparent;
+    width: 3rem;
+    aspect-ratio: 1;
+    padding: 0;
+    border: none;
+    outline: none;
+    user-select: none;
+    place-items: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dots-slider-option-wrapper:hover {
+    outline: none !important;
+    transition: none;
+}
+
+.dots-slider-option {
+    border-radius: 50%;
+    width: 10px;
+    padding: 0;
+    aspect-ratio: 1;
+    background-color: var(--detail);
+    opacity: 30%;
+}
+
+.dots-slider-option.active {
+    background-color: var(--detail);
+    opacity: 70%;
+}
